@@ -35,9 +35,8 @@ $tmp_file = $_FILES['files']['tmp_name'];
 $eror = $_FILES['files']['error'];
 $type = $_FILES['files']['type'];
 
-// BOM
-$kd_material = $_POST['material'];
-// $keb = $_POST['keb'];
+
+
 
 
 if($eror === 4){
@@ -81,15 +80,6 @@ $namaGambarBaru.=$ekstensiGambarValid;
 if (move_uploaded_file($tmp_file, "../../image/produk/".$namaGambarBaru)) {
 
 	$result = mysqli_query($conn, "INSERT INTO produk VALUES('$kode','$nm_produk','$namaGambarBaru','$desk','$harga','$stok')");
-
-	$filter = array_filter($kd_material);
-	$jml = count($filter) - 1;
-	$no = 0;
-	while ($no <= $jml) {
-
-		mysqli_query($conn, "INSERT INTO bom_produk VALUES('$format','$kd_material[$no]','$kode','$nm_produk','$keb[$no]')");
-		$no++;
-	}
 
 	if($result){
 		echo "

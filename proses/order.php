@@ -38,6 +38,7 @@ while($row = mysqli_fetch_assoc($keranjang)){
 	$row_detail_produk = mysqli_fetch_assoc($detail_produk);
 	$stok = $row_detail_produk['stok'] - $qty;
 	$produk = mysqli_query($conn, "UPDATE produk SET stok = '$stok' where kode_produk = '$kd_produk'");
+	$customer = mysqli_query($conn, "UPDATE customer SET provinsi = '$prov' , alamat = '$alamat' , kota = '$kota' , kode_pos = '$kopos' where kode_customer = '$kd_cs'");
 }
 	$del_keranjang = mysqli_query($conn,"DELETE FROM keranjang WHERE kode_customer = '$kd_cs'");
 

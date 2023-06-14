@@ -27,33 +27,37 @@ include 'header.php';
 					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Username" name="username" required >
 				</div>
 			</div>
+			
 			<div class="col-md-6">
 				<div class="form-group">
 					<label for="exampleInputPassword1">No Tepl</label>
 					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="+62" name="telp" required >
 				</div>
 			</div>
-
-		</div>
-
-
-		<div class="row">
-			
 			<div class="col-md-6">
 				<div class="form-group">
 					<label for="exampleInputPassword1">Password</label>
 					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" required>
 				</div>
 			</div>
-			<div class="col-md-6">
+
+
+
+		</div>
+
+
+		<div class="row">
+			
+		<div class="col-md-6">
 				<div class="form-group">
 					<label for="exampleInputPassword1">Konfirmasi Password</label>
 					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Konfirmasi Password" name="konfirmasi" required>
 				</div>
 			</div>
+
 		</div>
 
-		<button type="submit" class="btn btn-success">Register</button>
+		<button type="submit" class="btn btn-primary" >Daftar</button>
 	</form>
 </div>
 

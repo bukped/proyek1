@@ -18,9 +18,10 @@ else if(strlen($add) == 3){
 $nama = $_POST['nama'];
 $username = $_POST['username'];
 $password = $_POST['password'];
+$konfirmasi = $_POST['konfirmasi'];
 $email = $_POST['email'];
 $tlp = $_POST['telp'];
-$konfirmasi = $_POST['konfirmasi'];
+
 
 
 
@@ -40,7 +41,7 @@ if($password == $konfirmasi){
 		die;
 	}
 
-	$result = mysqli_query($conn, "INSERT INTO customer VALUES('$format','$nama', '$email', '$username', '$hash', '$tlp')");
+	$result = mysqli_query($conn, "INSERT INTO customer VALUES('$format','$nama', '$email', '$username', '$hash', '$tlp', '', '', '', 0)");
 	if($result){
 		echo "
 		<script>

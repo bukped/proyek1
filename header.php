@@ -9,7 +9,7 @@ if(isset($_SESSION['kd_cs'])){
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MAKANAN HEWAN PELIHARAAN</title>
+	<title>TOKO SARIMANAH FOOD CAT & DOG</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
@@ -23,7 +23,7 @@ if(isset($_SESSION['kd_cs'])){
 		<div class="row top">
 			<center>
 				<div class="col-md-4"  style="padding: 3px;">
-					<span>MAKANAN HEWAN PELIHARAAN</span>
+					<span>TOKO SARIMANAH FOOD CAT & DOG</span>
 				</div>
 			</center>
 		</div>

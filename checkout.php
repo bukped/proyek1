@@ -66,14 +66,14 @@ $rows = mysqli_fetch_assoc($cs);
 			<div class="col-md-6">
 				<div class="form-group">
 					<label for="exampleInputPassword1">Provinsi</label>
-					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Provinsi" name="prov">
+					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Provinsi" name="prov" value="<?= $rows['provinsi']; ?>">
 				</div>
 			</div>
 
 			<div class="col-md-6">
 				<div class="form-group">
 					<label for="exampleInputPassword1">Kota</label>
-					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Kota" name="kota">
+					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Kota" name="kota" value="<?= $rows['kota']; ?>">
 				</div>
 			</div>
 		</div>
@@ -82,14 +82,14 @@ $rows = mysqli_fetch_assoc($cs);
 			<div class="col-md-6">
 				<div class="form-group">
 					<label for="exampleInputPassword1">Alamat</label>
-					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Alamat" name="almt">
+					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Alamat" name="almt" value="<?= $rows['alamat']; ?>">
 				</div>
 			</div>
 
 			<div class="col-md-6">
 				<div class="form-group">
 					<label for="exampleInputPassword1">Kode Pos</label>
-					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Kode Pos" name="kopos">
+					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Kode Pos" name="kopos" value="<?= $rows['kode_pos']; ?>">
 				</div>
 			</div>
 		</div>
